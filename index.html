@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fluerisence - Flower website</title>
+    <link rel="icon" type="image/x-icon" href="Fluer.png" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Background Animation -->
+    <div class="background">
+      <div class="bg bg1"></div>
+      <div class="bg bg2"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <img src="Fluer.png" alt="Fluer Flower Shop Logo" class="logo-img" />
+        Fluerisence
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><button class="btn" id="gallery">Gallery</button></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <section id="home" class="content">
+      <div class="hero-text">
+        <h1>Welcome to Fluerisence</h1>
+        <p>Just a fun website for flowers, I guess</p>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-header">
+            <h2>About Us</h2>
+            <div class="underline"></div>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-card">
+              <div class="card-icon">🌸</div>
+              <h3>Our Story</h3>
+              <p>
+                We started Fluerisence with a simple passion: bringing the
+                beauty of nature into everyday life. Each flower tells a story,
+                and we're here to help you share yours.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <div class="card-icon">🌺</div>
+              <h3>Our Mission</h3>
+              <p>
+                To provide the freshest, most beautiful flowers while creating
+                memorable experiences for every occasion. We believe flowers
+                have the power to brighten any moment.
+              </p>
+            </div>
+
+            <div class="about-card">
+              <div class="card-icon">🌼</div>
+              <h3>Our Promise</h3>
+              <p>
+                Quality, freshness, and care in every bouquet. We work directly
+                with local growers to ensure you receive the finest flowers,
+                arranged with love and attention to detail.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-target="200">0</div>
+              <div class="stat-label">Flower Species</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="50">0</div>
+              <div class="stat-label">Fun Facts</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="12">0</div>
+              <div class="stat-label">Months of Blooms</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="100">0</div>
+              <div class="stat-label">Photos Shared</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="index.js"></script>
+  </body>
+</html>

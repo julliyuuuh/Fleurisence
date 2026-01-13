@@ -1,0 +1,278 @@
+/* Gallery Hero Section */
+.gallery-hero {
+  position: relative;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px 40px;
+}
+
+.gallery-hero-content {
+  text-align: center;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-hero-content h1 {
+  font-size: 4rem;
+  font-family: "Satisfy", cursive;
+  margin-bottom: 20px;
+  animation: fadeInUp 0.8s ease;
+}
+
+.gallery-hero-content p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  animation: fadeInUp 0.8s ease 0.2s backwards;
+}
+
+/* Active page styling */
+.active-page {
+  color: #ff8fb7 !important;
+  background: rgba(255, 143, 183, 0.15) !important;
+}
+
+/* Flowers Section */
+.flowers-section {
+  position: relative;
+  min-height: 100vh;
+  padding: 60px 20px 80px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.flowers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Flip Card Container */
+.flower-card-container {
+  perspective: 1000px;
+  height: 400px;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.flower-card-container:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.flower-card-container:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.flower-card-container:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.flower-card-container:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.flower-card-container:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.flower-card-container:nth-child(6) {
+  animation-delay: 0.6s;
+}
+
+.flower-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flower-card.flipped {
+  transform: rotateY(180deg);
+}
+
+.flower-card-front,
+.flower-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.flower-card-front {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.flower-card-front:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(253, 121, 121, 0.25);
+}
+
+.flower-card-back {
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: white;
+}
+
+/* Front Card Styles */
+.flower-image {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.flower-emoji-large {
+  font-size: 8rem;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.15));
+  transition: transform 0.3s ease;
+}
+
+.flower-card-front:hover .flower-emoji-large {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Photo styling */
+.flower-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.flower-card-front:hover .flower-photo {
+  transform: scale(1.05);
+}
+
+.flower-card-front h3 {
+  font-size: 2rem;
+  color: #3db6b1;
+  margin: 20px 0 10px;
+  font-family: "Satisfy", cursive;
+}
+
+.click-hint {
+  font-size: 0.9rem;
+  color: #999;
+  font-style: italic;
+}
+
+/* Back Card Styles */
+.card-back-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.card-back-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+  font-family: "Satisfy", cursive;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.flower-latin {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.flower-description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  opacity: 0.95;
+}
+
+.flower-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fact-tag {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Gradient backgrounds */
+.roses-gradient {
+  background: linear-gradient(135deg, #ff6b9d 0%, #c94b7d 100%);
+}
+
+.tulips-gradient {
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+}
+
+.sunflowers-gradient {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+}
+
+.orchids-gradient {
+  background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.lavender-gradient {
+  background: linear-gradient(135deg, #9b59b6 0%, #e8d0f5 100%);
+}
+
+.cherry-gradient {
+  background: linear-gradient(135deg, #ffc3d7 0%, #fff0f5 100%);
+}
+
+/* Responsive design stuff or animation */
+@media (max-width: 768px) {
+  .gallery-hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .gallery-hero-content p {
+    font-size: 1rem;
+  }
+
+  .flowers-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .flower-card-container {
+    height: 380px;
+  }
+
+  .flower-image {
+    height: 200px;
+  }
+
+  .flower-emoji-large {
+    font-size: 6rem;
+  }
+
+  .card-back-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .flower-description {
+    font-size: 0.9rem;
+  }
+}
